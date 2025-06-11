@@ -41,10 +41,10 @@
 			}
 		}
 		async function run() {
-			for await (const section of makeTextFileLineIterator('https://mahe-lab.github.io/sops/README.md')) {
+			for await (const section of makeTextFileLineIterator('https://mahe-lab.github.io/sop_calculators/README.md')) {
 				processLine(section);
 			}
-			var footer="<br><h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href=\"mailto:ermahe@ucalgary.ca\">Contact</a></h5><br>";
+			var footer="<br><h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>Copyright &copy; 2025 All Rights Reserved by Etienne Mahe | <a href=\"mailto:ermahe@ucalgary.ca\">Contact</a></h5><br>";
 			document.body.innerHTML = document.body.innerHTML+footer;
 		}
 		function processLine(section) {
